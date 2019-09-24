@@ -1,0 +1,14 @@
+from collections import Counter
+
+def word_count(fname):
+            with open(fname) as f:
+                    return Counter(f.read().split())
+
+print("no. of words in the file :", word_count("text.txt"))
+
+
+OUTPUT
+cs2016b104@cmruuser:~/Desktop$ python lab2.py
+('no. of words in the file :', Counter({'is': 2, 'a': 1, 'good': 1, 'useful': 1, 'for': 1, 'Python': 1, 'course.': 1, '.': 1, 'machine': 1, 'course': 1, '\xef\xbb\xbfPython': 1, 'learning': 1}))
+cs2016b104@cmruuser:~/Desktop$ 
+
